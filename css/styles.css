@@ -9,14 +9,41 @@
     --text-dark: #212121;
     --text-white: #FFFFFF;
     --text-light-grey: #757575;
+    --header-border: #ECECEC;
+}
+* {
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    background: #ECECEC;
+    background-color: var(--white-bg);
     color: var(--text-dark);
 }
-
+.section {
+    padding: 94px 0;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.main-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--header-border);
+}
+.site-navigation, 
+.contact-links,
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+.hero-section-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 /*HEADER*/
@@ -27,12 +54,14 @@ body {
     color:#000000;
     cursor: pointer;
     line-height: 1.19;
+    margin-right: 93px; 
 }
 .text-blue {
     color: var(--text-blue);
 }
 .site-navigation {
     list-style: none;
+    column-gap: 46px;
 }
 .site-navigation a {
     text-decoration: none;
@@ -46,6 +75,11 @@ body {
 .site-navigation a:focus {
     color: var(--text-blue);
 }
+.contact-links {
+    display: flex;
+    margin-left: auto;
+    column-gap: 50px;
+}
 .contact-links a {
     text-decoration: none;
     font-weight: 500;
@@ -56,14 +90,17 @@ body {
     color: var(--text-blue);
 }
 /*INDEX.HTML*/
+
 .hero-section {
     background-color: var(--dark-background);
+    padding: 220px 0;
 }
 .hero-section h1 {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     color: var(--text-white);
+    text-align: center;
 }
 .hero-section button {
     background-color: var(--light-blue-bg);
@@ -74,10 +111,13 @@ body {
     outline: none;
     border: none;
     border-radius: 4px;
+    width: fit-content;
+    padding: 10px 40px;
 }
 .usp-blocks {
-    background-color: var(--light-white-bg);
     list-style: none;
+    display: flex;
+    column-gap: 30px;
 }
 .usp-blocks ul {
     list-style: none;
@@ -102,10 +142,30 @@ body {
     line-height: 1.16;
     font-weight: 700;
     color: var(--text-dark);
+    text-align: center;
 }
-.list-team {
+.item-grid-wrapper {
+    display: flex;
+    column-gap: 30px;
+}
+.section-list-team {
     background-color: var(--lighter-white-bg);
 }
+.list-team-wrapper {
+    display: flex;
+    column-gap: 30px; 
+    justify-content: center;
+}
+.list-team-wrapper li {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
 .list-team ul {
     list-style: none;
 }
@@ -114,12 +174,15 @@ body {
     line-height: 1.16;
     font-weight: 700;
     color: var(--text-dark);
+    text-align: center;
 }
 .list-team-worker {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     color: var(--text-dark);
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .list-team.worker.list-team-position {
     font-weight: 400;
@@ -131,13 +194,22 @@ body {
 
 .list-buttons {
     background-color: var(--white-bg);
+    padding-top: 94px;
+    border-radius: 4px;
 }
 .list-buttons ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: baseline;
+    column-gap: 8px;
+    border-radius: 4px;
 }
 .list-buttons li {
     background-color: var(--lighter-white-bg);
 }
+
 .list-buttons button {
     font-weight: 500;
     font-size: 16px;
@@ -148,6 +220,7 @@ body {
     outline: none;
     border: none; 
     border-radius: 4px;
+    padding: 6px 22px;
 }
 .list-buttons button:hover {
     background-color: var(--light-blue-bg);
@@ -161,6 +234,11 @@ body {
 }
 .list-items {
     background-color: var(--white-bg);
+    padding-top: 34px;
+}
+.set-card {
+    display: flex;
+    flex-wrap: wrap;
 }
 .list-items ul {
     list-style: none;
@@ -181,12 +259,15 @@ body {
 .footer-wrapper {
     background-color: var(--dark-background);
 }
+
 .footer-logo {
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19;
     color: var(--text-white);
     text-decoration: none;
+    display: flex;
+    padding-left: 35px;
 }
 .text-web {
     color: var(--text-blue);
@@ -196,6 +277,10 @@ body {
 }
 .address-items ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-bottom: 9px;
 }
 .address-items span {
     font-weight: 400;

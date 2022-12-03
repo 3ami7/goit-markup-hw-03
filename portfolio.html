@@ -2,6 +2,10 @@
 <html lang="pl">
     <head>
         <meta charset="UTF-8" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        />
         <link rel="stylesheet" href="css/styles.css" />
         <title>Studio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,18 +16,16 @@
         />
     </head>
     <body>
-        <header>
-            <nav>
+        <header class="container main-header">
+            <nav class="main-nav">
                 <a class="main-logo" href="./index.html"
                     ><span class="text-blue">Web</span><span>Studio</span></a
                 >
-                <div class="navigation">
-                    <ul class="site-navigation">
-                        <li><a href="#">Agencja</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                    </ul>
-                </div>
+                <ul class="site-navigation">
+                    <li><a href="#">Agencja</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
             </nav>
             <div class="contact-links">
                 <a href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -32,8 +34,8 @@
         </header>
         <main>
             <!--Filters-->
-            <div class="list-buttons">
-                <ul>
+            <div class="list-buttons section">
+                <ul class="container">
                     <li><button type="button">Wszystkie</button></li>
                     <li><button type="button">Strony</button></li>
                     <li><button type="button">Aplikacje</button></li>
@@ -42,8 +44,8 @@
                 </ul>
             </div>
             <!--Portfolio-->
-            <section class="list-items">
-                <ul>
+            <section class="list-items section">
+                <ul class="set-card container">
                     <li>
                         <figure>
                             <img
