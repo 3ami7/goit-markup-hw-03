@@ -10,6 +10,7 @@
     --text-white: #FFFFFF;
     --text-light-grey: #757575;
     --header-border: #ECECEC;
+    --border-color: #eeeeee;
 }
 * {
     box-sizing: border-box;
@@ -205,7 +206,6 @@ body {
 .list-buttons {
     background-color: var(--white-bg);
     padding-top: 94px;
-    border-radius: 4px;
 }
 .list-buttons ul {
     list-style: none;
@@ -214,10 +214,10 @@ body {
     justify-items: center;
     align-items: baseline;
     column-gap: 8px;
-    border-radius: 4px;
 }
 .list-buttons li {
     background-color: var(--lighter-white-bg);
+    border-radius: 4px;
 }
 
 .list-buttons button {
@@ -229,12 +229,13 @@ body {
     cursor: pointer;
     outline: none;
     border: none; 
-    border-radius: 4px;
     padding: 6px 22px;
+    border-radius: 4px;
 }
 .list-buttons button:hover {
     background-color: var(--light-blue-bg);
     color: var(--text-white);
+    border-radius: 4px;
 }
 .list-buttons button:focus {
     background-color: var(--light-blue-bg);
@@ -258,12 +259,21 @@ body {
     font-size: 18px;
     line-height: 2.0;
     color: var(--text-dark);
+    margin-bottom: 4px;
 }
 .list-items span {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     color: #757575;
+}
+.list-items figcaption {
+    border: 1px solid var(--border-color);
+    border-top: none;
+    padding: 20px 24px;
+}
+.list-items img {
+    vertical-align: bottom;
 }
 
 /*FOOTER*/
