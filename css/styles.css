@@ -38,7 +38,7 @@ body {
 .main-header {
     display: flex;
     align-items: center;
-    padding: 24px 0 25px;
+    padding: 24px 15px 25px;
 }
 .site-navigation, 
 .contact-links,
@@ -51,6 +51,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 }
 
 
@@ -109,7 +110,6 @@ body {
     color: var(--text-white);
     text-align: center;
     margin: 106px 252px;
-    gap: 30px;
 }
 .hero-section button {
     background-color: var(--light-blue-bg);
@@ -122,6 +122,7 @@ body {
     border-radius: 4px;
     width: fit-content;
     padding: 10px 40px;
+    margin-bottom: 106px;
 }
 .usp-blocks {
     list-style: none;
@@ -142,6 +143,9 @@ body {
     line-height: 1.71;
     font-weight: 400;
     color: var(--text-light-grey)
+}
+.items-grid {
+    margin-top: -94px;
 }
 .items-grid ul {
     list-style: none;
@@ -244,36 +248,33 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
-.list-items {
-    background-color: var(--white-bg);
-    padding-top: 34px;
-}
+
 .set-card {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
-.list-items ul {
+    background-color: var(--white-bg);
     list-style: none;
+    margin-bottom: 50px;
 }
-.list-items h3 {
+.set-card h3 {
     font-size: 18px;
     line-height: 2.0;
     color: var(--text-dark);
     margin-bottom: 4px;
 }
-.list-items span {
+.set-card span {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     color: #757575;
 }
-.list-items figcaption {
+.set-card figcaption {
     border: 1px solid var(--border-color);
     border-top: none;
     padding: 20px 24px;
 }
-.list-items img {
+.set-card img {
     vertical-align: bottom;
 }
 
@@ -304,10 +305,9 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column;
+    gap: 9px;
 }
-.address-items li {
-    padding-bottom: 9px;
-}
+
 .address-items span {
     font-weight: 400;
     font-size: 14px;
