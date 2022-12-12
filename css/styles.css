@@ -208,23 +208,21 @@ body {
 }
 /*PORTFOLIO.HTML*/
 
-.list-buttons {
-    background-color: var(--white-bg);
-    padding-top: 94px;
-}
-.filters{
+.filters {
     list-style: none;
     display: flex;
     justify-content: center;
     column-gap: 8px;
     margin-bottom: 50px;
+    background-color: var(--white-bg);
+    padding-top: 94px;
 }
-.list-buttons li {
+.filters li {
     background-color: var(--lighter-white-bg);
     border-radius: 4px;
 }
 
-.list-buttons button {
+.filters button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -236,12 +234,12 @@ body {
     padding: 6px 22px;
     border-radius: 4px;
 }
-.list-buttons button:hover {
+.filters button:hover {
     background-color: var(--light-blue-bg);
     color: var(--text-white);
     border-radius: 4px;
 }
-.list-buttons button:focus {
+.filters button:focus {
     background-color: var(--light-blue-bg);
     color: var(--white-bg);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
