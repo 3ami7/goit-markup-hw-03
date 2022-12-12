@@ -215,7 +215,6 @@ body {
     column-gap: 8px;
     margin-bottom: 50px;
     background-color: var(--white-bg);
-    padding-top: 94px;
 }
 .filters li {
     background-color: var(--lighter-white-bg);
