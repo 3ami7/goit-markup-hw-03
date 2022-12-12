@@ -212,12 +212,10 @@ body {
     background-color: var(--white-bg);
     padding-top: 94px;
 }
-.list-buttons ul {
+.filters{
     list-style: none;
     display: flex;
     justify-content: center;
-    justify-items: center;
-    align-items: baseline;
     column-gap: 8px;
     margin-bottom: 50px;
 }
